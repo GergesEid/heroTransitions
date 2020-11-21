@@ -1,24 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="heroTransitions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xMl-Ce-hvg">
+                                <rect key="frame" x="157" y="74" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8Ff-0Y-xi2"/>
+                                    <constraint firstAttribute="width" constant="100" id="SsW-IJ-0Sd"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK2-SB-dEb">
+                                <rect key="frame" x="157" y="74" width="100" height="100"/>
+                                <connections>
+                                    <action selector="imageButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MHI-9B-X14"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IK2-SB-dEb" firstAttribute="centerX" secondItem="xMl-Ce-hvg" secondAttribute="centerX" id="6OC-na-Plw"/>
+                            <constraint firstItem="IK2-SB-dEb" firstAttribute="width" secondItem="xMl-Ce-hvg" secondAttribute="width" id="AKA-dn-fth"/>
+                            <constraint firstItem="IK2-SB-dEb" firstAttribute="centerY" secondItem="xMl-Ce-hvg" secondAttribute="centerY" id="L3j-1z-87n"/>
+                            <constraint firstItem="xMl-Ce-hvg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="PJ8-HB-L4X"/>
+                            <constraint firstItem="xMl-Ce-hvg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="euj-jp-ioG"/>
+                            <constraint firstItem="IK2-SB-dEb" firstAttribute="height" secondItem="xMl-Ce-hvg" secondAttribute="height" id="p9v-Mr-TJU"/>
+                        </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="heroImage" destination="xMl-Ce-hvg" id="EcC-KN-xZW"/>
+                        <segue destination="PcI-dd-CR4" kind="presentation" identifier="second" modalPresentationStyle="fullScreen" id="bdD-Cs-eD0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="109" y="113"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="sqt-Rg-aRV">
+            <objects>
+                <viewController id="PcI-dd-CR4" customClass="ViewController2" customModule="heroTransitions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wUx-D3-AFI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uOE-nP-mik">
+                                <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QD5-Pr-tqd">
+                                <rect key="frame" x="10" y="54" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DxU-d3-qyi"/>
+                                    <constraint firstAttribute="width" constant="50" id="WyU-o6-Nsx"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="PcI-dd-CR4" eventType="touchUpInside" id="QyW-4F-P6e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZAl-dC-O1h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZAl-dC-O1h" firstAttribute="trailing" secondItem="uOE-nP-mik" secondAttribute="trailing" id="Cyd-We-QLA"/>
+                            <constraint firstItem="QD5-Pr-tqd" firstAttribute="top" secondItem="ZAl-dC-O1h" secondAttribute="top" constant="10" id="W0i-3t-o2B"/>
+                            <constraint firstItem="QD5-Pr-tqd" firstAttribute="leading" secondItem="ZAl-dC-O1h" secondAttribute="leading" constant="10" id="bvC-nZ-KOI"/>
+                            <constraint firstItem="uOE-nP-mik" firstAttribute="top" secondItem="ZAl-dC-O1h" secondAttribute="top" id="gTP-J8-IY0"/>
+                            <constraint firstItem="uOE-nP-mik" firstAttribute="height" secondItem="wUx-D3-AFI" secondAttribute="height" multiplier="0.5" id="o7X-eE-SVR"/>
+                            <constraint firstItem="uOE-nP-mik" firstAttribute="leading" secondItem="ZAl-dC-O1h" secondAttribute="leading" id="snC-bz-qiD"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cyZ-HN-yde" appends="YES" id="ded-5V-VLF"/>
+                        </connections>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="secondImage" destination="uOE-nP-mik" id="Unt-Gk-he1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XgN-tp-SJ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="cyZ-HN-yde">
+                    <connections>
+                        <action selector="handlePan:" destination="PcI-dd-CR4" id="BUy-TU-6RY"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="849" y="113"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

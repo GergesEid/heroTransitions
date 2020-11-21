@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20649D70744E7C8125ECF219 /* Pods_heroTransitions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A507C6A0030C5C818311DFB6 /* Pods_heroTransitions.framework */; };
 		E7BBABC42569830800CF95EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BBABC32569830800CF95EE /* AppDelegate.swift */; };
 		E7BBABC62569830800CF95EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BBABC52569830800CF95EE /* SceneDelegate.swift */; };
 		E7BBABC82569830800CF95EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BBABC72569830800CF95EE /* ViewController.swift */; };
 		E7BBABCB2569830800CF95EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7BBABC92569830800CF95EE /* Main.storyboard */; };
 		E7BBABCD2569830900CF95EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BBABCC2569830900CF95EE /* Assets.xcassets */; };
 		E7BBABD02569830900CF95EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7BBABCE2569830900CF95EE /* LaunchScreen.storyboard */; };
+		E7BBABDC256984BC00CF95EE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BBABDB256984BC00CF95EE /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A507C6A0030C5C818311DFB6 /* Pods_heroTransitions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heroTransitions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAB12C11AD1EA92915F1D70 /* Pods-heroTransitions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heroTransitions.debug.xcconfig"; path = "Target Support Files/Pods-heroTransitions/Pods-heroTransitions.debug.xcconfig"; sourceTree = "<group>"; };
 		E7BBABC02569830800CF95EE /* heroTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = heroTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BBABC32569830800CF95EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7BBABC52569830800CF95EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		E7BBABCC2569830900CF95EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7BBABCF2569830900CF95EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7BBABD12569830900CF95EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7BBABDB256984BC00CF95EE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		EA5329F7A0393192B8273706 /* Pods-heroTransitions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heroTransitions.release.xcconfig"; path = "Target Support Files/Pods-heroTransitions/Pods-heroTransitions.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20649D70744E7C8125ECF219 /* Pods_heroTransitions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52AE091685D647E314345E3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCAB12C11AD1EA92915F1D70 /* Pods-heroTransitions.debug.xcconfig */,
+				EA5329F7A0393192B8273706 /* Pods-heroTransitions.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		642C428B401A13EADC813723 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A507C6A0030C5C818311DFB6 /* Pods_heroTransitions.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7BBABB72569830800CF95EE = {
 			isa = PBXGroup;
 			children = (
 				E7BBABC22569830800CF95EE /* heroTransitions */,
 				E7BBABC12569830800CF95EE /* Products */,
+				52AE091685D647E314345E3B /* Pods */,
+				642C428B401A13EADC813723 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +85,7 @@
 				E7BBABC32569830800CF95EE /* AppDelegate.swift */,
 				E7BBABC52569830800CF95EE /* SceneDelegate.swift */,
 				E7BBABC72569830800CF95EE /* ViewController.swift */,
+				E7BBABDB256984BC00CF95EE /* ViewController2.swift */,
 				E7BBABC92569830800CF95EE /* Main.storyboard */,
 				E7BBABCC2569830900CF95EE /* Assets.xcassets */,
 				E7BBABCE2569830900CF95EE /* LaunchScreen.storyboard */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7BBABD42569830900CF95EE /* Build configuration list for PBXNativeTarget "heroTransitions" */;
 			buildPhases = (
+				39784B0F515361289B3181F5 /* [CP] Check Pods Manifest.lock */,
 				E7BBABBC2569830800CF95EE /* Sources */,
 				E7BBABBD2569830800CF95EE /* Frameworks */,
 				E7BBABBE2569830800CF95EE /* Resources */,
+				C5F13171F4A06570E180CA6B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +161,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		39784B0F515361289B3181F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-heroTransitions-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F13171F4A06570E180CA6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-heroTransitions/Pods-heroTransitions-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-heroTransitions/Pods-heroTransitions-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-heroTransitions/Pods-heroTransitions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E7BBABBC2569830800CF95EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E7BBABC82569830800CF95EE /* ViewController.swift in Sources */,
+				E7BBABDC256984BC00CF95EE /* ViewController2.swift in Sources */,
 				E7BBABC42569830800CF95EE /* AppDelegate.swift in Sources */,
 				E7BBABC62569830800CF95EE /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +355,7 @@
 		};
 		E7BBABD52569830900CF95EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCAB12C11AD1EA92915F1D70 /* Pods-heroTransitions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		E7BBABD62569830900CF95EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA5329F7A0393192B8273706 /* Pods-heroTransitions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
