@@ -1,0 +1,6 @@
+framework module Pods_heroTransitions {
+  umbrella header "Pods-heroTransitions-umbrella.h"
+
+  export *
+  module * { export * }
+}
