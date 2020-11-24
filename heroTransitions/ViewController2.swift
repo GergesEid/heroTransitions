@@ -11,10 +11,12 @@ import Hero
 class ViewController2: UIViewController {
     
     @IBOutlet weak var secondImage: UIImageView!
+    @IBOutlet weak var redButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         secondImage.heroID = "image"
+        redButton.heroID = "red"
         secondImage.image = UIImage(named: "grill")
         // Do any additional setup after loading the view.
     }
@@ -34,11 +36,14 @@ class ViewController2: UIViewController {
             let currentPosition = CGPoint(x: translation.x + secondImage.center.x, y: translation.y + secondImage.center.y)
             Hero.shared.apply(modifiers: [.position(currentPosition)], to: secondImage)
         default:
-            if progress > 0.1 {
-                Hero.shared.finish()
-            } else {
-                Hero.shared.cancel()
-            }
+            // to dismiss for up and down direction
+            Hero.shared.finish()
+            // to dismiss for down direction only, must uncomment this if statement
+//            if progress > 0.1 {
+//                Hero.shared.finish()
+//            } else {
+//                Hero.shared.cancel()
+//            }
         }
     }
     

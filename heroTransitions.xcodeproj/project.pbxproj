@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		20649D70744E7C8125ECF219 /* Pods_heroTransitions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A507C6A0030C5C818311DFB6 /* Pods_heroTransitions.framework */; };
+		E752AF7E256CA5C800D952F5 /* productsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752AF7D256CA5C800D952F5 /* productsViewController.swift */; };
+		E752AF81256CA62D00D952F5 /* productsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752AF80256CA62D00D952F5 /* productsCollectionViewCell.swift */; };
+		E752AF84256CA92700D952F5 /* DetailsItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752AF83256CA92700D952F5 /* DetailsItemViewController.swift */; };
 		E7BBABC42569830800CF95EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BBABC32569830800CF95EE /* AppDelegate.swift */; };
 		E7BBABC62569830800CF95EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BBABC52569830800CF95EE /* SceneDelegate.swift */; };
 		E7BBABC82569830800CF95EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BBABC72569830800CF95EE /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		A507C6A0030C5C818311DFB6 /* Pods_heroTransitions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heroTransitions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAB12C11AD1EA92915F1D70 /* Pods-heroTransitions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heroTransitions.debug.xcconfig"; path = "Target Support Files/Pods-heroTransitions/Pods-heroTransitions.debug.xcconfig"; sourceTree = "<group>"; };
+		E752AF7D256CA5C800D952F5 /* productsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productsViewController.swift; sourceTree = "<group>"; };
+		E752AF80256CA62D00D952F5 /* productsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E752AF83256CA92700D952F5 /* DetailsItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsItemViewController.swift; sourceTree = "<group>"; };
 		E7BBABC02569830800CF95EE /* heroTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = heroTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BBABC32569830800CF95EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7BBABC52569830800CF95EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 				E7BBABC52569830800CF95EE /* SceneDelegate.swift */,
 				E7BBABC72569830800CF95EE /* ViewController.swift */,
 				E7BBABDB256984BC00CF95EE /* ViewController2.swift */,
+				E752AF7D256CA5C800D952F5 /* productsViewController.swift */,
+				E752AF80256CA62D00D952F5 /* productsCollectionViewCell.swift */,
+				E752AF83256CA92700D952F5 /* DetailsItemViewController.swift */,
 				E7BBABC92569830800CF95EE /* Main.storyboard */,
 				E7BBABCC2569830900CF95EE /* Assets.xcassets */,
 				E7BBABCE2569830900CF95EE /* LaunchScreen.storyboard */,
@@ -208,8 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E752AF81256CA62D00D952F5 /* productsCollectionViewCell.swift in Sources */,
 				E7BBABC82569830800CF95EE /* ViewController.swift in Sources */,
 				E7BBABDC256984BC00CF95EE /* ViewController2.swift in Sources */,
+				E752AF84256CA92700D952F5 /* DetailsItemViewController.swift in Sources */,
+				E752AF7E256CA5C800D952F5 /* productsViewController.swift in Sources */,
 				E7BBABC42569830800CF95EE /* AppDelegate.swift in Sources */,
 				E7BBABC62569830800CF95EE /* SceneDelegate.swift in Sources */,
 			);
